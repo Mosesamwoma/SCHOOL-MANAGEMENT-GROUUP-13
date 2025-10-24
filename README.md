@@ -8,20 +8,15 @@ It helps schools manage students, teachers, classes, subjects, and reports effic
 - Teacher management  
 - Class and subject scheduling  
 - Attendance tracking  
-- Grade recording and report generation  
-- Secure login system (Admin, Teacher, Student roles)  
-- Dashboard with key statistics  
 
 ## 🛠️ Tech Stack
-- **Backend:** Django (Python)
-- **Frontend:** HTML, CSS, JavaScript / React (optional)
-- **Database:** PostgreSQL or SQLite
+- C++ (Terminal App)
 - **Version Control:** Git & GitHub
 
 ## 👥 Team Members
 - Group 13
 - [x] Moses Tumbo Amomwama
-- [ ] Ongeza another person here.....
+- [ ] Ongeza another person here- groupt memebseers...
 
 ## 💡 Future Improvements
 - Add parent portal  
