@@ -15,8 +15,10 @@ It helps schools manage students, teachers, classes, subjects, and reports effic
 
 ## 👥 Team Members
 - Group 13
-- [x] Moses Tumbo Amomwama
-- [ ] Ongeza another person here- groupt memebseers...
+- [x] MOSES TUMBO AMWOMA
+- [ ] MIGELE HANDEL ODIWUOR
+- [ ] PEACE KAWA
+- [ ] MUTUA IRENE WAVINYA
 
 ## 💡 Future Improvements
 - Add parent portal  
