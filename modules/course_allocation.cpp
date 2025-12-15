@@ -1,76 +1,72 @@
-#include "course_scheduling.h"
+/*
+===============================================
+MODULE: COURSE SCHEDULING
+DATA STRUCTURE: QUEUE
+REASON: FIFO ensures fair registration order
+TIME COMPLEXITY:
+  - Enqueue: O(1)
+  - Dequeue: O(1)
+  - Peek: O(1)
+===============================================
+*/
+
 #include <iostream>
+#include <queue>
+#include <string>
+using namespace std;
 
-CircularQueue::CircularQueue(int cap) 
-    : capacity(cap), front(0), rear(-1), size(0) {
-    queue.resize(capacity);
-}
-
-bool CircularQueue::isEmpty() const {
-    return size == 0;
-}
-
-bool CircularQueue::isFull() const {
-    return size == capacity;
-}
-
-bool CircularQueue::enqueue(const std::string& student_id) {
-    if (isFull()) return false;
+class CourseScheduler {
+private:
+    // QUEUE USED HERE
+    queue<string> waitingList; // stores student IDs
     
-    rear = (rear + 1) % capacity;
-    queue[rear] = student_id;
-    size++;
-    return true;
-}
-
-std::string CircularQueue::dequeue() {
-    if (isEmpty()) return "";
-    
-    std::string student_id = queue[front];
-    front = (front + 1) % capacity;
-    size--;
-    return student_id;
-}
-
-CourseScheduler::CourseScheduler(const std::string& code, int capacity)
-    : courseCode(code), courseCapacity(capacity), enrollmentQueue(1000) {}
-
-std::string CourseScheduler::registerForCourse(const std::string& student_id) {
-    if (enrolledStudents.find(student_id) != enrolledStudents.end()) {
-        return "Already enrolled in " + courseCode;
+public:
+    // O(1) operation
+    void registerStudent(string studentId) {
+        // QUEUE ENQUEUE
+        waitingList.push(studentId);
+        cout << studentId << " joined waitlist." << endl;
     }
     
-    if (enrolledStudents.size() < courseCapacity) {
-        enrolledStudents.insert(student_id);
-        return "Successfully enrolled in " + courseCode;
-    } else {
-        if (enrollmentQueue.enqueue(student_id)) {
-            return "Added to waiting list for " + courseCode + ". Position: " + 
-                   std::to_string(enrollmentQueue.getSize());
-        }
-        return "Waiting list is full for " + courseCode;
-    }
-}
-
-bool CourseScheduler::processWaitingList() {
-    if (!enrollmentQueue.isEmpty() && enrolledStudents.size() < courseCapacity) {
-        std::string student_id = enrollmentQueue.dequeue();
-        if (!student_id.empty()) {
-            enrolledStudents.insert(student_id);
-            return true;
+    // O(1) operation
+    void allocateCourse() {
+        if (!waitingList.empty()) {
+            // QUEUE DEQUEUE
+            string student = waitingList.front();
+            waitingList.pop();
+            cout << "Course allocated to: " << student << endl;
+        } else {
+            cout << "No students waiting." << endl;
         }
     }
-    return false;
-}
-
-void CourseScheduler::displayEnrollmentStatus() {
-    std::cout << "\n=== COURSE " << courseCode << " ENROLLMENT STATUS ===\n";
-    std::cout << "Enrolled: " << enrolledStudents.size() << "/" << courseCapacity << "\n";
-    std::cout << "Waiting list: " << enrollmentQueue.getSize() << " students\n";
     
-    std::cout << "Enrolled students: ";
-    for (const auto& student : enrolledStudents) {
-        std::cout << student << " ";
+    // O(1) operation
+    string nextInLine() {
+        if (!waitingList.empty()) {
+            // QUEUE PEEK
+            return waitingList.front();
+        }
+        return "None";
     }
-    std::cout << "\n";
+    
+    void showWaitlist() {
+        cout << "\nWaitlist size: " << waitingList.size() << endl;
+    }
+};
+
+int main() {
+    CourseScheduler scheduler;
+    
+    scheduler.registerStudent("S001");
+    scheduler.registerStudent("S002");
+    scheduler.registerStudent("S003");
+    
+    cout << "Next: " << scheduler.nextInLine() << endl;
+    
+    scheduler.allocateCourse();
+    scheduler.allocateCourse();
+    
+    scheduler.showWaitlist();
+    
+    return 0;
 }
