@@ -52,8 +52,8 @@ This School Management System streamlines administrative operations for educatio
 
 ```bash
 # Clone repository
-git clone https://github.com/MosesAmwoma/school-management-group13.git
-cd school-management-group13
+git clone https://github.com/mosesamwoma/school-management-system.git
+cd school-management-system
 
 # Compile
 g++ -std=c++17 -o school_management main.cpp -Wall
@@ -94,17 +94,10 @@ Navigate using numeric keys and follow on-screen prompts.
 
 ---
 
-## 📄 License
-
-Developed for educational purposes by Group 13.  
-**Copyright © 2026. All Rights Reserved.**
-
----
-
 ## 📞 Contact
 
 **Project Lead:** Moses Tumbo Amwoma  
-**Repository:** [github.com/MosesAmwoma/school-management-group13](https://github.com/MosesAmwoma/school-management-group13)
+**Repository:** [github.com/mosesamwoma/school-management-system](https://github.com/mosesamwoma/school-management-system)
 
 ---
 
