@@ -103,7 +103,12 @@ Navigate using numeric keys and follow on-screen prompts.
 
 ## 🙏 Acknowledgments
 
-Special thanks to our instructors, team members, and the open-source community for their support and guidance.
+We extend our sincere gratitude to:
+
+- **[Felix Mokaya](https://github.com/felixmokayabeatz)** – For invaluable technical guidance and support throughout the project
+- **Our Academic Instructors** – For their mentorship and expertise
+- **Group 13 Team Members** – For dedication and collaborative efforts
+- **Open Source Community** – For inspiration and best practices
 
 ---
 
