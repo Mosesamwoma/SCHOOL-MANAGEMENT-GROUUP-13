@@ -1,37 +1,32 @@
 # 🏫 School Management System – Group 13
 
-A comprehensive **School Management System** developed by **Group 13** to streamline administrative tasks and improve educational institution management.
+A comprehensive **C++ terminal-based application** for efficient school administration and academic management.
+
+---
 
 ## 📋 Overview
 
-This terminal-based application helps schools efficiently manage students, teachers, classes, subjects, and administrative reports. Built with C++ for optimal performance and reliability.
+This School Management System streamlines administrative operations for educational institutions, providing robust tools for managing students, teachers, classes, and academic records through an intuitive command-line interface.
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-- **Student Management**
-  - Student registration and profile management
-  - Academic records tracking
-  - Student information updates and queries
-
-- **Teacher Management**
-  - Teacher registration and assignment
-  - Subject allocation
-  - Performance tracking
-
-- **Academic Operations**
-  - Class and subject scheduling
-  - Attendance tracking system
-  - Report generation
+- **Student Management** – Registration, profiles, and academic records
+- **Teacher Management** – Staff registration, subject assignment, and scheduling
+- **Class Scheduling** – Organize classes and academic periods
+- **Attendance Tracking** – Monitor student and teacher attendance
+- **Report Generation** – Comprehensive academic and administrative reports
+- **Data Management** – Secure storage and retrieval of records
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
-- **Language:** C++ (Terminal-based Application)
+- **Language:** C++ (ISO Standard C++17)
+- **Interface:** Command Line Interface
 - **Version Control:** Git & GitHub
-- **Development Environment:** Command Line Interface
+- **Platform:** Cross-platform (Windows, Linux, macOS)
 
 ---
 
@@ -39,105 +34,84 @@ This terminal-based application helps schools efficiently manage students, teach
 
 | Name | Role | Status |
 |------|------|--------|
-| MOSES TUMBO AMWOMA | Team Lead | ✅ Active |
-| MIGELE HANDEL ODIWUOR | Developer | 🔄 Pending |
-| PEACE KAWA | Developer | 🔄 Pending |
-| MUTUA IRENE WAVINYA | Developer | 🔄 Pending |
+| Moses Tumbo Amwoma | Team Lead & Core Developer | ✅ Active |
+| Migele Handel Odiwuor | Backend Developer | ✅ Active |
+| Peace Kawa | Systems Analyst | 🔄 Pending |
+| Mutua Irene Wavinya | Documentation & Testing | 🔄 Pending |
 
 ---
 
-## 📦 Installation & Setup
+## 📦 Installation
 
 ### Prerequisites
-- C++ compiler (GCC, Clang, or MSVC)
-- Git installed on your system
+- C++ compiler (GCC 7.0+, Clang 5.0+, or MSVC 2017+)
+- Git version 2.0+
+- Minimum 512MB RAM
 
-### Installation Steps
+### Setup
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/MosesAmwoma/school-management-group13.git
-   ```
+```bash
+# Clone repository
+git clone https://github.com/MosesAmwoma/school-management-group13.git
+cd school-management-group13
 
-2. **Navigate to project directory**
-   ```bash
-   cd school-management-group13
-   ```
+# Compile
+g++ -std=c++17 -o school_management main.cpp -Wall
 
-3. **Compile the program**
-   ```bash
-   g++ -o school_management main.cpp
-   ```
-
-4. **Run the application**
-   ```bash
-   ./school_management
-   ```
+# Run
+./school_management
+```
 
 ---
 
 ## 📖 Usage
 
-After launching the application, you'll be presented with a menu-driven interface. Follow the on-screen prompts to:
-- Register new students or teachers
-- View and update records
-- Track attendance
-- Generate reports
+The application features a menu-driven interface for:
+- Student and teacher registration
+- Record management and updates
+- Attendance tracking
+- Report generation
+
+Navigate using numeric keys and follow on-screen prompts.
 
 ---
 
-## 💡 Future Improvements
+## 🚀 Future Enhancements
 
-### Phase 1 – Enhanced Functionality
-- [ ] Parent portal for student progress monitoring
-- [ ] Fee payment and financial management module
-- [ ] SMS/Email notifications system
-- [ ] Exam and grading management
-
-### Phase 2 – Modern Interface
-- [ ] Web-based dashboard
-- [ ] Mobile-friendly responsive UI
-- [ ] Desktop application (Qt/wxWidgets)
-
-### Phase 3 – Advanced Features
-- [ ] Data analytics and insights
-- [ ] Library management integration
-- [ ] Timetable auto-generation
-- [ ] Multi-language support
+- **Phase 1:** Parent portal, fee management, notification system, exam module
+- **Phase 2:** Web-based dashboard, mobile-responsive UI, RESTful API
+- **Phase 3:** Data analytics, AI-powered insights, mobile applications
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! To contribute:
-
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create a feature branch (`git checkout -b feature/NewFeature`)
+3. Commit changes (`git commit -m 'Add NewFeature'`)
+4. Push to branch (`git push origin feature/NewFeature`)
 5. Open a Pull Request
 
 ---
 
 ## 📄 License
 
-This project is developed for educational purposes by Group 13.
+Developed for educational purposes by Group 13.  
+**Copyright © 2026. All Rights Reserved.**
 
 ---
 
 ## 📞 Contact
 
-**Project Maintainer:** Moses Tumbo Amwoma  
+**Project Lead:** Moses Tumbo Amwoma  
 **Repository:** [github.com/MosesAmwoma/school-management-group13](https://github.com/MosesAmwoma/school-management-group13)
 
 ---
 
 ## 🙏 Acknowledgments
 
-- Our instructors and mentors
-- All team members for their dedication
-- The open-source community for inspiration
+Special thanks to our instructors, team members, and the open-source community for their support and guidance.
 
 ---
 
-**⭐ If you find this project useful, please consider giving it a star!**
+**⭐ Star this project if you find it useful!**
